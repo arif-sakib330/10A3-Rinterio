@@ -1,18 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Rinterio</title>
   </head>
+
   <body>
-    <header>
-      <div>
-        <div>
-          <h1>Rinterio</h1>
+    <!-- header -->
+    <header class="mt-4 mx-20 items-center">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center">
+          <img src="logo/arrow-up-right-01.png" alt="" />
+          <h1 class="font-bold text-2xl">Rinterio</h1>
         </div>
         <div>
-          <ul>
+          <ul class="flex gap-3">
             <li><a href="">Home</a></li>
             <li><a href="">Services </a></li>
             <li><a href="">Portfolio </a></li>
@@ -20,13 +31,33 @@
             <li><a href="">Contact Us </a></li>
           </ul>
         </div>
-        <div>
+        <div class="flex gap-3 items-center">
           <img src="logo/Frame 2.png" alt="" />
           <img src="logo/Frame 3.png" alt="" />
-          <button>Book Consult</button>
+          <button class="btn bg-[#ABEF5F]">
+            Book Consult <img src="logo/arrow-up-right-02.png" alt="" />
+          </button>
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <!-- banner -->
+      <div class="">
+        <div class="flex flex-col items-center text-center">
+          <img class="flex" src="assets/banner.png" alt="" />
+          <h1 class="font-extrabold text-3xl pb-4">
+            A barn house of this design has a <br />
+            striking appearance
+          </h1>
+          <p>
+            The barn house captivates with its blend of rustic charm and modern
+            <br />
+            sophistication, featuring weathered wood, sleek metal accents, and
+            <br />
+            large windows that flood the space with natural light.
+          </p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
